@@ -25,4 +25,3 @@ vim.g.maplocalleader = "\\"
 require("vim-options")
 require("lazy").setup("plugins")
 
-
