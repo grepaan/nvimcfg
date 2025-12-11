@@ -3,7 +3,7 @@ return {
     lazy = false,
     config = function()
       require("themery").setup({
-			themes = {"catppuccin", "tokyonight", "dracula"}, -- Your list of installed colorschemes.
+			themes = {"catppuccin", "tokyonight", "dracula", "vscode"}, -- Your list of installed colorschemes.
 			livePreview = true, -- Apply theme while picking. Default to true.
       })
     end

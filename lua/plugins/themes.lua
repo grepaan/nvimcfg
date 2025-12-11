@@ -21,5 +21,12 @@ return {
 		name = "dracula",
 		priority = 1000,
 		opts = {},
-	}
+	},
+	{
+		'Mofiqul/vscode.nvim',
+		lazy = false,
+		name = "vscode",
+		priority = 1000,
+		opts = {},
+	},
 }

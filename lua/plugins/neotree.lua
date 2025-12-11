@@ -6,6 +6,13 @@ return {
 		"nvim-tree/nvim-web-devicons",
 		"MunifTanjim/nui.nvim",
 	},
+  config = function()
+    require("neo-tree").setup({
+      window = {
+        width = 60,
+      },
+    })
+  end,
 	vim.keymap.set('n', '<leader>n', function ()
 		vim.cmd('Neotree filesystem reveal left toggle')
 	end, {noremap = true, silent = true})
