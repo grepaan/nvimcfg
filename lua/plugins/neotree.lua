@@ -13,7 +13,7 @@ return {
       },
     })
   end,
-	vim.keymap.set('n', '<leader>n', function ()
+	vim.keymap.set('n', '<leader>N', function ()
 		vim.cmd('Neotree filesystem reveal left toggle')
 	end, {noremap = true, silent = true})
 }

@@ -21,7 +21,8 @@ return {
 			vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 			vim.keymap.set('n', '<leader>fs', builtin.lsp_document_symbols, { desc = 'Telescope find symbols in current file' })
 			vim.keymap.set('n', '<leader>fS', builtin.lsp_workspace_symbols, { desc = 'Telescope find symbols in workspace' })
-			vim.keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<CR>")
+			vim.keymap.set("n", "<leader>gd", "<cmd>Telescope lsp_definitions<CR>")
+      vim.keymap.set('n', '<leader>fr', builtin.oldfiles, { desc = 'Telescope recent files' })
 		end
 	},
 	{

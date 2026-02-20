@@ -5,6 +5,7 @@ vim.cmd("set expandtab")
 vim.cmd("set smartindent")
 vim.cmd("se number")
 vim.cmd("set relativenumber")
+vim.cmd("set ignorecase")
 vim.g.mapleader = " "
 
 -- Something to make pasting work
