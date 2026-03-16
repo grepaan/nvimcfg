@@ -28,10 +28,11 @@ return {
 	},
 
 	keys = {
-		{ "<leader>zc", ":CopilotChatToggle<CR>",  mode = "n", desc = "Toggle Copilot chat" },
+		{ "<leader><leader>", ":CopilotChat ",  mode = "n", desc = "Ask Copilot" },
+		{ "<leader><leader>", ":CopilotChat ",  mode = "v", desc = "Ask Copilot about selection" },
 		{ "<leader>ze", ":CopilotChatExplain<CR>", mode = "v", desc = "Explain code" },
 		{ "<leader>zr", ":CopilotChatReview<CR>",  mode = "v", desc = "Review code" },
-		{ "<leader>zz", ":CopilotChat #buffer<CR>", mode = "n", desc= "Add active buffer to context" },
+		{ "<leader>zz", ":CopilotChatToggle<CR>", mode = "n", desc= "Toggle Copilot chat" },
 	},
 
 }

@@ -20,12 +20,17 @@ return {
 					},
 					lua = { "function", "table" },
 					python = { "class", "function" },
-					c = { "function" },
-					cpp = { "function" },
+          c = { "function_definition" },
+          cpp = {
+            "function_definition",
+            "class_specifier",
+            "struct_specifier",
+            "namespace_definition",
+          },
 					java = { "class", "function" },
 				},
 				mode = "cursor", -- context follows cursor
-				separator = nil, -- line between context and code, nil for none
+				separator = "=" -- line between context and code, nil for none
 			})
 			-- Set faded background for context line
 			vim.api.nvim_set_hl(0, "TreesitterContext", { bg = "#555555", fg = "NONE", underline = true })
